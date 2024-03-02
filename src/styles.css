@@ -198,3 +198,21 @@ body {
     transform: translateY(100%)
   }
 }
+
+input, textarea{
+  background-color: #838895 !important;
+  color: aliceblue !important;
+}
+
+.heading{
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+label{
+  margin-left: 10px;
+}
+
+table{
+  text-align: center;
+}

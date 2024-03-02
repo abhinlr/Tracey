@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LogsService } from 'src/app/services/logs.service';
 
 @Component({
   selector: 'app-create-log',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
 export class CreateLogComponent {
   formData: any = {};
 
-  constructor() {
+  constructor(public logsService: LogsService) {
     // Initialize formData with current time and date
     const now = new Date();
     this.formData.time = this.formatTime(now);
@@ -21,5 +22,9 @@ export class CreateLogComponent {
 
   private formatDate(date: Date): string {
     return date.toISOString().slice(0, 10);
+  }
+
+  createLog(formData:any){
+    this.logsService.createNewLog(formData);
   }
 }

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Meeting with team",
+    "description": "Discuss project updates",
+    "time": "10:00",
+    "date": "2024-03-02"
+  },
+  {
+    "id": 2,
+    "title": "Lunch break",
+    "description": "Grab lunch with colleagues",
+    "time": "12:30",
+    "date": "2024-03-02"
+  },
+  {
+    "id": 3,
+    "title": "Training session",
+    "description": "Attend training on new software",
+    "time": "2:00",
+    "date": "2024-03-03"
+  }
+]

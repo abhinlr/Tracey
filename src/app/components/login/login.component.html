@@ -1,1 +1,21 @@
-<p>login works!</p>
+<div class="container">
+  <div id="login">
+    <div class="form-container">
+      <form #login="ngForm" (ngSubmit)="loginUser()">
+        <h1>
+          Login
+        </h1>
+        <br>
+        <br>
+        <label for="username" class="form-label">Username</label>
+        <input type="text" name="username" class="form-control" [(ngModel)]="loginData.username" required>
+        <br>
+        <label for="inputPassword" class="form-label">Password</label>
+        <input type="password" name="password" class="form-control" aria-describedby="passwordHelpBlock" [(ngModel)]="loginData.password"  required>
+        <div class="button">
+          <button type="submit" class="btn btn-primary" [disabled]="login.invalid">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

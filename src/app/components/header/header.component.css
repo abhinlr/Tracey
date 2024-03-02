@@ -42,3 +42,8 @@
 .header-nav-item:hover {
   color: #fff6
 }
+
+img{
+  width: 40px;
+  height: 40px;
+}

@@ -1,1 +1,32 @@
-<p>log-details works!</p>
+<div class="container">
+  <div id="log-details">
+    <div class="row">
+      <form (ngSubmit)="updateLog()" #createForm="ngForm">
+        <div class="row">
+          <div class="col">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" placeholder="Enter Title" [(ngModel)]="logDetails.title" name="title" id="title" required>
+          </div>
+          <div class="col">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" placeholder="Enter Description" name="description" id="description" [(ngModel)]="logDetails.description" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <label for="time">Time</label>
+            <input type="time" class="form-control" [(ngModel)]="logDetails.time" name="time" id="time" required>
+          </div>
+          <div class="col">
+            <label for="date">Date</label>
+            <input type="date" class="form-control" [(ngModel)]="logDetails.date" name="date" id="date" required>
+          </div>
+        </div>
+        <div class="button">
+          <button type="submit" class="btn btn-primary" [disabled]="createForm.invalid">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>

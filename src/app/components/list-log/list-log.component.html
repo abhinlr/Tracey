@@ -16,7 +16,7 @@
         <tbody>
           <tr *ngFor="let log of logs">
             <td>
-              <a>{{log.title}}</a>
+              <a [routerLink]="['/logDetails',log.id]">{{log.title}}</a>
             </td>
             <td>{{log.date}}</td>
             <td>{{log.time}}</td>

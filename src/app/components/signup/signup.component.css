@@ -1,0 +1,58 @@
+h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  width: 500px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  width: 500px;
+
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  background: #1E2833;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.199);
+}
+
+.subtitle {
+  font-size: 11px;
+
+  color: rgba(177, 177, 177, 0.3);
+}
+
+input {
+  border: none;
+  border-bottom: solid rgb(143, 143, 143) 1px;
+
+  background: none;
+  color: rgba(255, 255, 255, 0.555);
+
+  height: 35px;
+  width: 300px;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+button{
+  float: right;
+}

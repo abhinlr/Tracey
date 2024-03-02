@@ -1,0 +1,34 @@
+.body-background {
+  display: flex;
+  height: 150vw;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: -50vw;
+  transform: rotate(44.52deg);
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 20;
+}
+
+.star-animation-loaded {
+  opacity: 1;
+}
+
+.star-animation {
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transition: 1s ease opacity;
+  width: 100%;
+  z-index: -1;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-create-log',
+  templateUrl: './create-log.component.html',
+  styleUrls: ['./create-log.component.css']
+})
+export class CreateLogComponent {
+  formData: any = {};
+
+  constructor() {
+    // Initialize formData with current time and date
+    const now = new Date();
+    this.formData.time = this.formatTime(now);
+    this.formData.date = this.formatDate(now);
+  }
+
+  private formatTime(date: Date): string {
+    return date.getHours().toString().padStart(2, '0') + ':' + date.getMinutes().toString().padStart(2, '0');
+  }
+
+  private formatDate(date: Date): string {
+    return date.toISOString().slice(0, 10);
+  }
+}

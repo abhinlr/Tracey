@@ -1,1 +1,200 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~@fortawesome/fontawesome-free/css/all.css';
+
+body {
+  background: #09050f;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 120px;
+  position: relative
+}
+
+::-webkit-scrollbar {
+  width: 5px
+}
+
+::-webkit-scrollbar-track {
+  background: inherit
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, .05);
+  border-radius: 99px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, .1)
+}
+
+*:focus {
+  outline: none
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%
+}
+
+body {
+  margin: 0
+}
+
+main {
+  display: block
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none
+}
+
+b,
+strong {
+  font-weight: bolder
+}
+
+img {
+  border-style: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none
+}
+
+button {
+  cursor: pointer
+}
+
+button,
+input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0
+}
+
+input:focus {
+  outline: none
+}
+
+button,
+input {
+  overflow: visible
+}
+
+button,
+select {
+  text-transform: none
+}
+
+button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+button:-moz-focusring {
+  outline: 1px dotted ButtonText
+}
+
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  padding: 0
+}
+
+li {
+  list-style: none
+}
+
+svg {
+  display: block
+}
+
+ul {
+  padding-left: 0
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Archivo Bold"), local("Archivo-Bold"), url(./assets/fonts/Archivo-Bold.ttf) format("woff2"), url(./assets/fonts/Archivo-Bold.ttf) format("ttf")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Archivo Regular"), local("Archivo-Regular"), url(./assets/fonts/Archivo-Regular.ttf) format("woff2"), url(./assets/fonts/Archivo-Regular.ttf) format("ttf")
+}
+
+body {
+  font-family: Archivo, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 0 12px
+}
+
+.body-background {
+  display: flex;
+  height: 150vw;
+  left: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: fixed;
+  top: -50vw;
+  transform: rotate(44.52deg);
+  width: -moz-max-content;
+  width: max-content;
+  z-index: 20
+}
+
+.body-background-line {
+  animation: bodyBackgroundLine 5s ease infinite;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 17.71%, rgba(255, 255, 255, 0) 34.9%, #fff 51.04%, rgba(255, 255, 255, 0) 67.19%, #fff 82.81%, rgba(255, 255, 255, 0) 100%);
+  height: 150%;
+  margin-right: 64px;
+  opacity: .03;
+  position: relative;
+  width: 1px
+}
+
+@keyframes bodyBackgroundLine {
+  0% {
+    transform: translate(0)
+  }
+
+  to {
+    transform: translateY(100%)
+  }
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="header">
+    <div class="header-me">
+      <div class="header-me-name"><a routerLink="/">Tracey</a></div>
+      <div class="header-me-role" *ngIf="router.url === '/'">, Home</div>
+    </div>
+    <ul class="header-nav">
+      <li q:key="Present"><a routerLink="/create-log" aria-label="Go to Create Log section" class="header-nav-item">Create</a></li>
+      <li q:key="Skills"><a aria-label="Go to Logs section" class="header-nav-item">Logs</a></li>
+      <li q:key="Contact"><a aria-label="Go to Account section" class="header-nav-item">My Account</a></li>
+    </ul>
+  </div>
+</div>
